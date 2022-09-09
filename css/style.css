@@ -1,13 +1,21 @@
 body {
-    font-family: sans-serif ;
+    font-family: rajdhani ;
     background-color: white ;
 }
 
-h1,
+div,
+
+.container {
+    max-width: auto;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  h1,
 .main-title { 
     text-align: center;
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: regular 400;
     color: black;
 }
 
@@ -15,9 +23,13 @@ h2,
 .main-title { 
     text-align: center;
     font-size: medium;
-    font-weight: bold;
+    font-weight: regular 400;
     color: black;
 }
 
+figure,
+.imagenes{
 
+    position: center;
+}
  
