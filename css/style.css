@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: Helvetica, sans-serif ;
-    background-color: red ;
+    background-color: white;
 }
 
 h1 {font-size: 3.5em;}
@@ -23,7 +23,6 @@ button{
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5) ;
     color: white;
     background-color: black;
-
 }
 
 button:hover{
@@ -38,7 +37,7 @@ button:hover{
 }
 
 header{
-    background-color: white;
+    background-color:Gainsboro;
      
 }
 
@@ -57,7 +56,7 @@ header .container{
     align-items: center;
 }
 
-header nav{
+header .nav{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -75,9 +74,68 @@ header a:hover{
     color: red;
 }
 
+h2,
+#Diego-Torres.container{
+    text-align: center;
+    padding: 200px 12px;
 
+}
 
+h2,
+#mis-fotografias{
+    background-color:black;
+    color: white;
+    text-align: center;
+}
 
+#mis-fotografias.container{
+    padding: 150px 12px;
+}
+
+#mis-fotografias h2{
+    margin-top: 0
+}
+
+#mis-fotografias p{
+    display: none;
+}
+
+#mis-fotografias .carta{
+
+}
+
+h3,
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(img/abuelolluvia.jpg);
+}
+
+h3,
+.carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("img/ave1.JPG") 
+        
+}
+
+h3,
+.carta:nth-child(3){
+            background-image: linear-gradient(
+                0deg
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            )
+            ,url("img/casa1.JPG")   
+    
+
+}
 
 
 
