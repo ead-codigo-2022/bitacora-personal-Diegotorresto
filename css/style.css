@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: 'open sans';
+    font-family: 'Rajdhani', sans-serif;
 }
 
 .contenedor{
@@ -89,10 +89,6 @@ header .textos-header{
     justify-content: space-evenly;
 }
 
-.imagen-about-us{
-    width: 48%;
-}
-
 .sobre-nosotros .contenido-textos{
     width: 48%;
 }
@@ -100,7 +96,7 @@ header .textos-header{
 .contenido-textos h3{
    margin-bottom: 15px;
    padding: 0px 0px 30px 15px;
-   text-align: left;
+   text-align: center;
 }
 
 
@@ -110,59 +106,87 @@ header .textos-header{
     text-align: justify;
  }
 
- /* Galería */
+ /* Camisetas */
 
- .camisetas{
-    background: white;
- }
-
-.galeria-camisetas{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+ #camisetas{
+    background-color: white;
+    color: white;
+    text-align: center;
 } 
 
-.imagen-camisetas{
-    width: 24%;
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 black;
+ #camisetas .contenedor{
+    padding: 100px 0px;
 }
 
-.imagen-camisetas > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+#camisetas h2{
+    margin-top: 0;
+
+}
+
+#camisetas p{
+    display: none;
+}
+
+#camisetas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+ 
+.carta:first-child{
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    )
+    ,url("img/Local.jpeg");
+}
+    
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+     )
+    ,url("img/Visita.jpeg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)    
+    )
+    ,url("img/Arquero.jpeg");
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)    
+    )
+    ,url("img/Especial.jpeg")
+}
+
+#camisetas .categorias{
+    display: flex;
+    justify-content: center;
+}
+
+#camisetas p{
     display: block;
 }
 
-.hover-galeria{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    transform: scale(0);
-    background: hsla(0, 0%, 0%, 0.855);
-    transition: trasform .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#camisetas h3{
+    margin-top: 0;
 }
 
-.hover-galeria img{
-    width: 50px;
-}
-
-.hover-galeria p{
-    color: white;
-}
-
-.imagen-camisetas:hover .hover-galeria{
-    transform: scale(1);
-}
 
 /*creador*/
 
@@ -172,9 +196,9 @@ header .textos-header{
 }
 
 .cards .card{
-    background: rgb(10, 10, 48);
+    background: white;
     display: flex;
-    width: 46%;
+    width: 60%;
     height: 200%;
     align-items: center;
     justify-content: space-evenly;
@@ -187,18 +211,115 @@ header .textos-header{
     width: 80px;
     height: 80px;
     object-fit: cover;
-    border: 3px solid black;
+    border: 3px solid w;
     border-radius: 50%;
     display: block;
 }
 
-.cards .card > .contenido-texto-card{
+h4{
     width: 60%;
-    color: white;
+    color: black;
 }
 
-.cards .card > .contenido-texto-card p{
+p2{
     font-weight: 300;
     padding: 5px;
+    color: black;
 }
 
+ /* Camisetas Local */
+ 
+ h2{
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+ }
+
+ .linea{
+    background: black;
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+.galeria{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+   width: 95%;
+   margin: auto;
+   grid-gap: 10px;
+   padding: 40px 0;
+   overflow: hidden;
+}
+
+.galeria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px black;
+}
+
+
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform (0.5s);
+}
+
+.galeria a:hover img{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}
+
+.ligth-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.ligth-box img{
+    width: 75vw;
+    max-height: 70vh;
+}
+
+.ligth-box:target{
+    transform: scale(1);
+}
+
+.close{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+}
+
+.next{
+    display: block;
+    background: red;
+    color: white;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+}
