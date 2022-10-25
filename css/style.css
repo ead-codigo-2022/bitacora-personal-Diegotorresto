@@ -23,7 +23,7 @@ body{
     margin-bottom: 60px;
 }
 
-/* Header */
+/* Header*/
 
 header{
     width: 100%;
@@ -38,6 +38,7 @@ header{
     background-attachment: fixed;
     position: relative;
 }
+
 
 nav{
     text-align: right;
@@ -196,35 +197,33 @@ header .textos-header{
 }
 
 .cards .card{
-    background: white;
+    background: black;
     display: flex;
-    width: 60%;
-    height: 200%;
+    width: 46%;
+    height: 200px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 5px;
-    box-shadow: white;
-
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
 }
 
 .cards .card img{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-    border: 3px solid w;
+    border: 3px solid #fff;
     border-radius: 50%;
     display: block;
 }
 
-h4{
+.cards .card > .contenido-texto-card{
     width: 60%;
-    color: black;
+    color: #fff;
 }
 
-p2{
+.cards .card > .contenido-texto-card p{
     font-weight: 300;
-    padding: 5px;
-    color: black;
+    padding-top: 5px;
 }
 
  /* Camisetas Local */
@@ -323,3 +322,4 @@ p2{
     text-decoration: none;
     text-align: center;
 }
+
