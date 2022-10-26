@@ -110,7 +110,7 @@ header .textos-header{
  /* Camisetas */
 
  #camisetas{
-    background-color: white;
+    background-color: hwb(216 8% 68%);
     color: white;
     text-align: center;
 } 
@@ -121,6 +121,7 @@ header .textos-header{
 
 #camisetas h2{
     margin-top: 0;
+    color: white;
 
 }
 
