@@ -23,6 +23,16 @@ body{
     margin-bottom: 60px;
 }
 
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    color: hwb(216 8% 68%);
+    background-color: white;
+}
 /* Header*/
 
 header{
@@ -191,102 +201,7 @@ header .textos-header{
     margin-top: 0;
 }
 
- /* Camisetas Local */
  
- h2{
-    font-weight: 400;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 40px;
- }
-
- .linea{
-    background: black;
-    height: 5px;
-    width: 100%;
-    display: block;
-}
-
-.galeria{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-   width: 95%;
-   margin: auto;
-   grid-gap: 10px;
-   padding: 40px 0;
-   overflow: hidden;
-}
-
-.galeria > a{
-    display: block;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 6px black;
-}
-
-
-.galeria img{
-    width: 100%;
-    vertical-align: top;
-    height: 300px;
-    object-fit: cover;
-    transition: transform (0.5s);
-}
-
-.galeria a:hover img{
-    filter: blur(2px);
-    transform: rotate(10deg) scale(1.3);
-}
-
-.ligth-box{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.5);
-    transition: transform .3s ease-in-out;
-    width: 100%;
-    height: 100vh;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0);
-}
-
-.ligth-box img{
-    width: 75vw;
-    max-height: 70vh;
-}
-
-.ligth-box:target{
-    transform: scale(1);
-}
-
-.close{
-    display: block;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    background: red;
-    color: white;
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50px;
-}
-
-.next{
-    display: block;
-    background: red;
-    color: white;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    text-decoration: none;
-    text-align: center;
-}
 
 /*Fotografias*/
 
@@ -458,3 +373,145 @@ header .textos-header{
 #tipo h3{
     margin-top: 0;
 }
+
+/*Galerias*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.galeria{
+    font-family:'Rajdhani', sans-serif;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:auto;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(24, 48, 129, 0.907) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 80%;
+    }
+}
+
+/* footer */
+
+footer{
+    background: white;
+    padding: 20px 0 20px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo-final{
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 24px;
+    margin: 20 0 0 0;
+    color: black;
+}
+
+.fo2{
+    background: rgba(24, 48, 129, 0.907);
+    padding: 20px 0 20px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo-final2{
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 24px;
+    margin: 20 0 0 0;
+    color: white;
+}
+
+/* blanco y color*/
+
+.fo3{
+    background: white;
+    padding: 20px 0 20px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo-final{
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 24px;
+    margin: 20 0 0 0;
+    color: black;
+}
+
+
