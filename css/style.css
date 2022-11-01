@@ -32,6 +32,7 @@ button{
     box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     color: hwb(216 8% 68%);
     background-color: white;
+    margin-top: 50px;
 }
 /* Header*/
 
@@ -126,7 +127,7 @@ header .textos-header{
 } 
 
  #camisetas .contenedor{
-    padding: 100px 0px;
+    padding: 150px 12px;
 }
 
 #camisetas h2{
@@ -186,8 +187,6 @@ header .textos-header{
     ,url("img/Especial.jpeg")
 }
 
-
-
 #camisetas .categorias{
     display: flex;
     justify-content: center;
@@ -195,11 +194,18 @@ header .textos-header{
 
 #camisetas p{
     display: block;
+    margin-top: 30px;
 }
 
 #camisetas h3{
     margin-top: 0;
 }
+
+
+#camisetas .carta{
+    padding: 50px;
+}
+
 
  
 
@@ -282,11 +288,19 @@ header .textos-header{
 
 #imagenes p{
     display: block;
+    margin-top: 30px;
 }
 
 #imagenes h3{
     margin-top: 0;
 }
+
+#imagenes .foto-fondo2{
+    padding: 50px;
+}
+
+
+
 
 /*inicio*/
 
@@ -368,10 +382,15 @@ header .textos-header{
 
 #tipo p{
     display: block;
+    margin-top: 30px;
 }
 
 #tipo h3{
     margin-top: 0;
+}
+
+#tipo .foto-fondo{
+    padding: 50;
 }
 
 /*Galerias*/
